@@ -1,10 +1,10 @@
 import requests
 
 
-def tradera_search(query, categoryId, pageNumber, orderBy):
+def tradera_search(categoryId, pageNumber, orderBy, query):
     
-    app_id = 4971
-    app_key = "0d66bbf2-cdd2-4ad2-9b44-542f2ce0652c"
+    app_id = 5050
+    app_key = "d5fbd47a-1508-4f9e-8fb0-0110cb924829"
   
     url = "http://api.tradera.com/v3/searchservice.asmx"
     
@@ -40,3 +40,6 @@ def tradera_search(query, categoryId, pageNumber, orderBy):
     # Nu har du svaret från Tradera API i response.text
     return response.text
 
+
+def tradera_http_request():
+  pass
