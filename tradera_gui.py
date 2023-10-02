@@ -1,13 +1,9 @@
 import xml.etree.ElementTree as ET
 from collections import namedtuple
 
-import json
 import streamlit as st
-from tradera_api import tradera_api_call
 
-# Importera API variabler 
-with open('config.json', 'r') as config_file:
-    config = json.load(config_file)
+from tradera_api import tradera_api_call
 
 ApiParameters = namedtuple("ApiParameters", [
     "app_id",
@@ -30,10 +26,10 @@ ApiParameters = namedtuple("ApiParameters", [
 ])
 
 # Default settings, ändras inte i GUI
-app_id = config['app_id']
-app_key = config['app_key']
+app_id = st.secrets["app_id"]  # import Value from Key in secrest.toml file
+app_key = st.secrets["app_key"]  # import Value from Key in secrest.toml file
 sandbox = 0
-max_result_age = 24
+max_result_age = 0
 
 ## GUI
 # Fält för input, i ordningen de syns i GUI
@@ -41,7 +37,6 @@ search_words = st.text_input("Search Words:")
 
 # Skapa 2 kolumner för category setting
 cat_input, cat_json_col = st.columns(2)
-
 with cat_input:
     category_id = st.number_input("Category ID:", value=302393)
 
@@ -112,5 +107,3 @@ if st.button("Search Auctions"):
         st.write(f"Länk till auktion: {item_url}")
         st.link_button(":joy:", item_url)
         st.write("----")
-
-print(f'{app_id}, {app_key}')
