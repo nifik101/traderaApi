@@ -64,12 +64,12 @@ Thumbs.db
 
 
 # Own dir
-/tradera_env
-/tests
-.gitignore
-/tests
-/test_func
-/data
-/legacy_wip
-/tradera_gpt_v2
+tradera_env/
+tests/
+test_func/
+data/
+legacy_wip/
+tradera_gpt_v2/
+
+# Own files
 config.json
