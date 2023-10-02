@@ -1,6 +1,75 @@
+.gitignore
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment directories
+venv/
+*.venv
+env/
+.virtualenv/
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Distribution / packaging files
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Cache and log files
+*.log
+*.bak
+*.cache
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Pyre type checker
+.pyre/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# Own dir
 /tradera_env
 /tests
 .gitignore
 /tests
 /test_func
-__pycache__
+/data
+/legacy_wip
+/tradera_gpt_v2
+config.json

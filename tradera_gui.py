@@ -1,8 +1,13 @@
 import xml.etree.ElementTree as ET
 from collections import namedtuple
 
+import json
 import streamlit as st
 from tradera_api import tradera_api_call
+
+# Importera API variabler 
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
 
 ApiParameters = namedtuple("ApiParameters", [
     "app_id",
@@ -25,8 +30,8 @@ ApiParameters = namedtuple("ApiParameters", [
 ])
 
 # Default settings, ändras inte i GUI
-app_id = 4971
-app_key = "0d66bbf2-cdd2-4ad2-9b44-542f2ce0652c"
+app_id = config['app_id']
+app_key = config['app_key']
 sandbox = 0
 max_result_age = 24
 
@@ -107,3 +112,5 @@ if st.button("Search Auctions"):
         st.write(f"Länk till auktion: {item_url}")
         st.link_button(":joy:", item_url)
         st.write("----")
+
+print(f'{app_id}, {app_key}')
