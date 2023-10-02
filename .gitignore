@@ -2,3 +2,5 @@
 /tests
 .gitignore
 /tests
+/test_func
+__pycache__
