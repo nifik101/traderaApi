@@ -1,0 +1,72 @@
+{
+    "Category": {
+      "Id": "1612",
+      "Name": "Accessoarer",
+      "Category": [
+        {
+          "Id": "341084",
+          "Name": "Bröllopsaccessoarer",
+          "Category": [
+            {
+              "Id": "1001020",
+              "Name": "Möhippeartiklar"
+            },
+            {
+              "Id": "1001017",
+              "Name": "Tiaror & hårsmycken"
+            },
+            {
+              "Id": "343228",
+              "Name": "Övriga bröllopsaccessoarer"
+            }
+          ]
+        },
+        {
+          "Id": "161213",
+          "Name": "Bälten & skärp",
+          "Category": [
+            {
+              "Id": "1001000",
+              "Name": "Flätade skärp"
+            },
+            {
+              "Id": "341760",
+              "Name": "Hängslen"
+            },
+            {
+              "Id": "340769",
+              "Name": "Konstläderbälten"
+            },
+            {
+              "Id": "340764",
+              "Name": "Läderbälten"
+            },
+            {
+              "Id": "1001001",
+              "Name": "Midjebälten"
+            },
+            {
+              "Id": "340763",
+              "Name": "Nitbälten"
+            },
+            {
+              "Id": "340762",
+              "Name": "Resårskärp"
+            },
+            {
+              "Id": "340765",
+              "Name": "Strassbälten"
+            },
+            {
+              "Id": "340761",
+              "Name": "Textilskärp"
+            },
+            {
+              "Id": "340768",
+              "Name": "Övriga skärp"
+            }
+          ]
+        }
+      ]
+    }
+  }
